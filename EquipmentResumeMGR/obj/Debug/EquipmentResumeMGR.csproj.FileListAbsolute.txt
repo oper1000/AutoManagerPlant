@@ -1,0 +1,17 @@
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csprojResolveAssemblyReference.cache
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmMain.resources
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmMDIMain.resources
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.Properties.Resources.resources
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csproj.GenerateResource.Cache
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmDatabaseSettings.resources
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmLogin.resources
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.exe
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.pdb
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.exe
+F:\Vbank\Document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.pdb
+f:\vbank\document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmEquipmentMGR.resources
+f:\vbank\document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmBugAdd.resources
+f:\vbank\document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.exe.config
+f:\vbank\document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmDailyReportView.resources
+f:\vbank\document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.cache
+f:\vbank\document\GitHub\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.compiled

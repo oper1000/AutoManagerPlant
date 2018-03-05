@@ -1,0 +1,12 @@
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\bin\Release\PriceSearch1.exe
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\bin\Release\PriceSearch1.pdb
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.frmDatabaseSettings.resources
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.FormBasket.frmDB_Value_Find.resources
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.frmLogin.resources
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.frmMain.resources
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.frmMDIMain.resources
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.Properties.Resources.resources
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.csproj.GenerateResource.Cache
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.exe
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.pdb
+F:\Vbank\Document\GitHub\PriceSearch1\PriceSearch1\obj\Release\PriceSearch1.csprojResolveAssemblyReference.cache
