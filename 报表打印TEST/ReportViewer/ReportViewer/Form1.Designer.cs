@@ -29,26 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.productBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.customerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).BeginInit();
+            this.CustomerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
-            this.reportViewer1.DataBindings.Add(new System.Windows.Forms.Binding("Tag", this.customerBindingSource, "CustomerID", true));
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "dsProduct";
+            reportDataSource1.Value = this.ProductBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ReportViewer.Report3.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.Size = new System.Drawing.Size(632, 334);
             this.reportViewer1.TabIndex = 0;
             // 
-            // customerBindingSource
+            // CustomerBindingSource
             // 
-            this.customerBindingSource.DataSource = typeof(ReportViewer.Customer);
+            this.CustomerBindingSource.DataMember = "Customer";
+            // 
+            // ProductBindingSource
+            // 
+            this.ProductBindingSource.DataSource = typeof(ReportViewer.DefineProduct.Product);
             // 
             // Form1
             // 
@@ -59,8 +66,8 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.productBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ProductBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -68,8 +75,8 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource customerBindingSource;
-        private System.Windows.Forms.BindingSource productBindingSource;
+        private System.Windows.Forms.BindingSource CustomerBindingSource;
+        private System.Windows.Forms.BindingSource ProductBindingSource;
     }
 }
 

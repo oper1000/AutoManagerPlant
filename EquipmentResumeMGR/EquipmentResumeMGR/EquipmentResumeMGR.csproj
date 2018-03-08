@@ -54,19 +54,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoManagerPlantDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AutoManagerPlantDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ClassBasket\clsComm.cs" />
     <Compile Include="ClassBasket\clsConnection.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DataDataSet.Designer.cs">
+    <Compile Include="ClassBasket\ReportDataSource.cs" />
+    <Compile Include="DataSets\dsBasicInfo.cs">
+      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSets\dsBasicInfo.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataDataSet.xsd</DependentUpon>
+      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
     </Compile>
     <Compile Include="FormBasket\frmBugAdd.cs">
       <SubType>Form</SubType>
@@ -146,27 +146,16 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="AutoManagerPlantDataSet.xsc">
-      <DependentUpon>AutoManagerPlantDataSet.xsd</DependentUpon>
+    <None Include="DataSets\dsBasicInfo.xsc">
+      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
     </None>
-    <None Include="AutoManagerPlantDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>AutoManagerPlantDataSet.Designer.cs</LastGenOutput>
+    <None Include="DataSets\dsBasicInfo.xsd">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="AutoManagerPlantDataSet.xss">
-      <DependentUpon>AutoManagerPlantDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataDataSet.xsc">
-      <DependentUpon>DataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="DataDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DataDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
+      <LastGenOutput>dsBasicInfo.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataDataSet.xss">
-      <DependentUpon>DataDataSet.xsd</DependentUpon>
+    <None Include="DataSets\dsBasicInfo.xss">
+      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

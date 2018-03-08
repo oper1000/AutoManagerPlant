@@ -171,10 +171,10 @@ namespace ReportViewer
         // Define Business Object "Merchant" that provides a 
         // GetProducts method that returns a collection of 
         // Product objects. 
-        public class Merchant
+        public class Merchant1111
         {
             private List<Product> m_products;
-            public Merchant()
+            public Merchant1111()
             {
                 m_products = new List<Product>();
                 m_products.Add(new Product("Pen", 25));

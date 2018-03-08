@@ -23,8 +23,8 @@
           </Paragraph>
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
-        <Top>0.44662cm</Top>
-        <Left>9.16238cm</Left>
+        <Top>0.7112cm</Top>
+        <Left>8.90467cm</Left>
         <Height>1.15562cm</Height>
         <Width>8.71771cm</Width>
         <Style>
@@ -80,7 +80,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>当班人员：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -111,7 +113,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -142,7 +146,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>日期：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -173,7 +179,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -204,7 +212,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>班次：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -235,7 +245,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -266,7 +278,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>班别：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -297,7 +311,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -333,7 +349,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>当班巡检情况：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -389,10 +407,26 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <DataSetName>DataSet1</DataSetName>
+        <DataSetName>dsBasicInfo</DataSetName>
+        <Filters>
+          <Filter>
+            <FilterExpression>=Fields!DailyReportDate.Value</FilterExpression>
+            <Operator>Equal</Operator>
+            <FilterValues>
+              <FilterValue DataType="DateTime">02/02/2018 00:00:00</FilterValue>
+            </FilterValues>
+          </Filter>
+          <Filter>
+            <FilterExpression>=Fields!DailyReportBanzu.Value</FilterExpression>
+            <Operator>Equal</Operator>
+            <FilterValues>
+              <FilterValue>dd</FilterValue>
+            </FilterValues>
+          </Filter>
+        </Filters>
         <Top>2.64266cm</Top>
         <Left>0.38009cm</Left>
-        <Height>1.61865cm</Height>
+        <Height>1.61864cm</Height>
         <Width>24.25062cm</Width>
         <ZIndex>1</ZIndex>
         <Style>
@@ -435,7 +469,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>序列</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -468,7 +504,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>巡检时间</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -501,7 +539,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>巡检内容</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -534,7 +574,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>结果</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -567,7 +609,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>巡检人</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -605,7 +649,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -638,7 +684,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -671,7 +719,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -704,7 +754,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -737,7 +789,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -840,7 +894,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>序列</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -873,7 +929,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>维修开始</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -906,7 +964,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>维修结束</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -939,7 +999,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>设备名称</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -972,7 +1034,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>故障现象</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1005,7 +1069,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>维修过程及措施</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1038,7 +1104,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>结果</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1071,7 +1139,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>故障原因分析</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1104,7 +1174,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>维修人</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1142,7 +1214,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1175,7 +1249,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1208,7 +1284,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1241,7 +1319,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1274,7 +1354,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1307,7 +1389,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1340,7 +1424,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1373,7 +1459,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1406,7 +1494,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style>
@@ -1476,7 +1566,7 @@
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>0.99688cm</Height>
+              <Height>0.6194cm</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
@@ -1488,7 +1578,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>当班工作内容：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1525,9 +1617,9 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
-        <Top>5.80526cm</Top>
+        <Top>5.98165cm</Top>
         <Left>0.38009cm</Left>
-        <Height>0.99688cm</Height>
+        <Height>0.6194cm</Height>
         <Width>24.25062cm</Width>
         <ZIndex>4</ZIndex>
         <Style>
@@ -1557,7 +1649,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value>其他内容：</Value>
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1593,7 +1687,9 @@
                           <TextRuns>
                             <TextRun>
                               <Value />
-                              <Style />
+                              <Style>
+                                <FontFamily>宋体</FontFamily>
+                              </Style>
                             </TextRun>
                           </TextRuns>
                           <Style />
@@ -1648,7 +1744,7 @@
     <Height>9.8125in</Height>
     <Style />
   </Body>
-  <Width>9.90964in</Width>
+  <Width>10.82965in</Width>
   <Page>
     <PageHeight>29.7cm</PageHeight>
     <PageWidth>21cm</PageWidth>
@@ -1661,14 +1757,56 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataDataSet">
+    <DataSource Name="AutoManagerPlantDataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>f34de1a3-f34b-454d-b0ef-9b87a57acaca</rd:DataSourceID>
+      <rd:DataSourceID>34988714-207f-4d1e-a2f3-54fcea4bac8f</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="dsBasicInfo">
+      <Query>
+        <DataSourceName>AutoManagerPlantDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewDate">
+          <DataField>CheckViewDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewTime">
+          <DataField>CheckViewTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewContent">
+          <DataField>CheckViewContent</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewResult">
+          <DataField>CheckViewResult</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewPersion">
+          <DataField>CheckViewPersion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsBasicInfo</rd:DataSetName>
+        <rd:SchemaPath>F:\VBank\Documents\GitHub\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\DataSets\dsBasicInfo.xsd</rd:SchemaPath>
+        <rd:TableName>DailyReport_CheckView</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>DailyReport_CheckViewTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>e15cdfaa-feff-491a-867e-5c1918605a69</rd:ReportID>
 </Report>

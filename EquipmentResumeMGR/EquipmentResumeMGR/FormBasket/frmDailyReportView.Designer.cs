@@ -30,53 +30,47 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.dataDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataDataSet1 = new EquipmentResumeMGR.DataDataSet();
-            this.DailyReport_detailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.dataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dailyReport_CheckViewTableAdapter1 = new EquipmentResumeMGR.DataDataSetTableAdapters.DailyReport_CheckViewTableAdapter();
-            this.dailyReport_detailsTableAdapter1 = new EquipmentResumeMGR.DataDataSetTableAdapters.DailyReport_detailsTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DailyReport_detailsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDataSetBindingSource)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.显示filterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autoManagerPlantDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.autoManagerPlantDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataDataSet1BindingSource
-            // 
-            this.dataDataSet1BindingSource.DataSource = this.dataDataSet1;
-            this.dataDataSet1BindingSource.Position = 0;
-            // 
-            // dataDataSet1
-            // 
-            this.dataDataSet1.DataSetName = "DataDataSet";
-            this.dataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // DailyReport_detailsBindingSource
-            // 
-            this.DailyReport_detailsBindingSource.DataMember = "DailyReport_details";
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.dataDataSet1BindingSource;
+            reportDataSource1.Name = "dsBasicInfo";
+            reportDataSource1.Value = this.autoManagerPlantDataSetBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "EquipmentResumeMGR.FormBasket.dailyReport.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Location = new System.Drawing.Point(0, 25);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(500, 449);
+            this.reportViewer1.Size = new System.Drawing.Size(500, 424);
             this.reportViewer1.TabIndex = 0;
             this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
-            // dailyReport_CheckViewTableAdapter1
+            // menuStrip1
             // 
-            this.dailyReport_CheckViewTableAdapter1.ClearBeforeFill = true;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.显示filterToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(500, 25);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // dailyReport_detailsTableAdapter1
+            // 显示filterToolStripMenuItem
             // 
-            this.dailyReport_detailsTableAdapter1.ClearBeforeFill = true;
+            this.显示filterToolStripMenuItem.Name = "显示filterToolStripMenuItem";
+            this.显示filterToolStripMenuItem.Size = new System.Drawing.Size(70, 21);
+            this.显示filterToolStripMenuItem.Text = "显示filter";
+            this.显示filterToolStripMenuItem.Click += new System.EventHandler(this.显示filterToolStripMenuItem_Click);
+            // 
+            // autoManagerPlantDataSetBindingSource
+            // 
+            this.autoManagerPlantDataSetBindingSource.Position = 0;
             // 
             // frmDailyReportView
             // 
@@ -84,26 +78,24 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(500, 449);
             this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmDailyReportView";
             this.Text = "frmReportView";
             this.Load += new System.EventHandler(this.frmReportView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DailyReport_detailsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataDataSetBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.autoManagerPlantDataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource DailyReport_detailsBindingSource;
-        private DataDataSet dataDataSet;
-        private System.Windows.Forms.BindingSource dataDataSetBindingSource;
-        private System.Windows.Forms.BindingSource dataDataSet1BindingSource;
-        private DataDataSet dataDataSet1;
-        private DataDataSetTableAdapters.DailyReport_CheckViewTableAdapter dailyReport_CheckViewTableAdapter1;
-        private DataDataSetTableAdapters.DailyReport_detailsTableAdapter dailyReport_detailsTableAdapter1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem 显示filterToolStripMenuItem;
+        private System.Windows.Forms.BindingSource autoManagerPlantDataSetBindingSource;
     }
 }
