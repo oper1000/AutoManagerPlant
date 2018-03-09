@@ -15,7 +15,9 @@ namespace EquipmentResumeMGR.ClassBasket
     class clsComm
     {
         public static string sUser;
-        public static string sDatabaseType = "1";//数据库类型：SQL_SERVER 为 1，ACCESS 为 0
+        public static string sDatabaseType = "0";//数据库类型：SQL_SERVER 为 1，ACCESS 为 0
+
+        
 
     }
 

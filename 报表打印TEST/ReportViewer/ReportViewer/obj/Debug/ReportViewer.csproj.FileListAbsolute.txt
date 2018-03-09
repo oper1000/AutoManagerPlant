@@ -30,6 +30,3 @@ F:\VBank\Documents\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportV
 F:\VBank\Documents\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.csproj.GenerateResource.Cache
 F:\VBank\Documents\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\RdlCompile.cache
 F:\VBank\Documents\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\RdlCompile.compiled
-F:\Vbank\Document\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\bin\Debug\ReportViewer.exe.config
-F:\Vbank\Document\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.exe
-F:\Vbank\Document\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.pdb

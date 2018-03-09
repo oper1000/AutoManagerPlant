@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EquipmentResumeMGR.ClassBasket
+namespace ReportViewer
 {
     /*
     /// <summary>
@@ -111,167 +111,73 @@ namespace EquipmentResumeMGR.ClassBasket
     }
      */
 
-    public class Dty_Daily_Report
+    public class DefineProduct
     {
-        #region 日报基本信息表
-        /// <summary>
-        /// 构建日报表基本信息虚拟表
-        /// </summary>
-        public class BasicInfo
+        public class Product
         {
-            private DateTime m_ReportDate;
-            private string m_ReportOnWorkPeople;
-            private string m_ReportBanci;
-            private string m_ReportBanzu;
-            public BasicInfo(DateTime reportDate, string reportOnWorkPeople, string reportBanci, string reportBanzu)
+            private string m_name;
+            private int m_price;
+            public Product(string name, int price)
             {
-                m_ReportDate = reportDate;
-                m_ReportOnWorkPeople = reportOnWorkPeople;
-                m_ReportBanci = reportBanci;
-                m_ReportBanzu = reportBanzu;
+                m_name = name;
+                m_price = price;
             }
-            public DateTime  ReportDate
+            public string Name
             {
-                get { return m_ReportDate; }
+                get { return m_name; }
             }
-            public string ReportOnWorkPeople
+            public int Price
             {
-                get { return m_ReportOnWorkPeople; }
-            }
-            public string ReportBanCi
-            {
-                get { return m_ReportBanci; }
-            }
-            public string ReportBanzu
-            {
-                get { return m_ReportBanzu; }
-            }
-            
-        }
-        #endregion
-
-        #region 日报巡检信息
-            /// <summary>
-            /// 构建日报巡检信息虚拟表
-            /// </summary>
-        public class CheckViewInfo
-        {
-            private DateTime m_checkviewdate;
-            private string m_checkviewbanci;
-            private DateTime m_checkviewtime;
-            private string m_checkviewcontent;
-            private string m_checkviewresult;
-            private string m_checkviewperson;
-
-            public CheckViewInfo(DateTime checkviewdate,
-                                 string checkviewbanci,
-                                 DateTime checkviewtime,
-                                 string checkviewcontent,
-                                 string checkviewresult,
-                                 string checkviewperson)
-            {
-                m_checkviewdate = checkviewdate;
-                m_checkviewbanci = checkviewbanci;
-                m_checkviewtime = checkviewtime;
-                m_checkviewcontent = checkviewcontent;
-                m_checkviewperson = checkviewperson;
-            }
-            public DateTime  CheckViewDate
-            {
-                get { return m_checkviewdate; }
-            }
-            public string CheckViewBanCi
-            {
-                get { return m_checkviewbanci; }
-            }
-            public DateTime CheckViewTime
-            {
-                get { return m_checkviewtime; }
-            }
-            public string CheckViewContent
-            {
-                get { return m_checkviewcontent; }
-            }
-            public string CheckViewPerson
-            {
-                get { return m_checkviewperson; }
+                get { return m_price; }
             }
         }
-        #endregion
 
-        #region 日报维修信息
-        /// <summary>
-        /// 构建日报维修信息虚拟表
-        /// </summary>
-        public class DailyReportDetails
+        public class abccc
         {
-            private string m_fixbybanci;   //班次
-            private DateTime m_fixstartdate; //开始维修日期
-            private DateTime m_fixstarttime; //维修开始时间
-            private DateTime  m_fixendtime;  //维修结束时间
-            private DateTime m_fixtimetotal; //维修总用时
-            private string m_equipmentnumber; //设备编号
-            private string m_bugappearance;    //故障现象
-            private string m_maintenanceprocedure;  //维修过程及措施
-            private string m_failurecause;   //故障原因分析
-            private string m_fixresult;  //维修结果
-            private string m_fixperson;  //维修人
-
-            public DailyReportDetails(string fixbybanci,
-                DateTime fixstartdate,
-                DateTime fixstarttime,
-                DateTime fixendtime,
-                DateTime fixtimetotal,
-                string equipmentnumber,
-                string bugappearance,
-                string maintenanceprocedure,
-                string failurecause,
-                string fixresult,
-                string fixperson)
+            private string m_name1;
+            private int m_price1;
+            public abccc(string name1, int price1)
             {
-                m_fixbybanci = fixbybanci;
-                m_fixstartdate = fixstartdate;
-                m_fixstarttime = fixstarttime;
-                m_fixendtime = fixendtime;
-                m_fixtimetotal = fixtimetotal;
-                m_equipmentnumber = equipmentnumber;
-                m_bugappearance = bugappearance;
-                m_maintenanceprocedure = maintenanceprocedure;
-                m_failurecause = failurecause;
-                m_fixresult = fixresult;
-                m_fixperson = fixperson;
+                m_name1 = name1;
+                m_price1 = price1;
             }
-            public DateTime CheckViewDate
+            public string Name1
             {
-                get { return m_checkviewdate; }
+                get { return m_name1; }
             }
-            public string CheckViewBanCi
+            public int Price1
             {
-                get { return m_checkviewbanci; }
-            }
-            public DateTime CheckViewTime
-            {
-                get { return m_checkviewtime; }
-            }
-            public string CheckViewContent
-            {
-                get { return m_checkviewcontent; }
-            }
-            public string CheckViewPerson
-            {
-                get { return m_checkviewperson; }
+                get { return m_price1; }
             }
         }
-        #endregion
+
+        public class abccc111
+        {
+            private string m_name1111;
+            private int m_price1111;
+            public abccc111(string name1111, int price1111)
+            {
+                m_name1111 = name1111;
+                m_price1111 = price1111;
+            }
+            public string Name1111
+            {
+                get { return m_name1111; }
+            }
+            public int Price1111
+            {
+                get { return m_price1111; }
+            }
+        }
 
 
         // Define Business Object "Merchant" that provides a 
         // GetProducts method that returns a collection of 
         // Product objects. 
-        public class Merchant
+        public class Merchant1111
         {
             private List<Product> m_products;
-            public Merchant()
+            public Merchant1111()
             {
                 m_products = new List<Product>();
                 m_products.Add(new Product("Pen", 25));

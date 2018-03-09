@@ -410,14 +410,14 @@
         <DataSetName>dsBasicInfo</DataSetName>
         <Filters>
           <Filter>
-            <FilterExpression>=Fields!CheckViewDate.Value</FilterExpression>
+            <FilterExpression>=Fields!DailyReportDate.Value</FilterExpression>
             <Operator>Equal</Operator>
             <FilterValues>
               <FilterValue DataType="DateTime">02/02/2018 00:00:00</FilterValue>
             </FilterValues>
           </Filter>
           <Filter>
-            <FilterExpression>=Fields!CheckViewPersion.Value</FilterExpression>
+            <FilterExpression>=Fields!DailyReportBanzu.Value</FilterExpression>
             <Operator>Equal</Operator>
             <FilterValues>
               <FilterValue>dd</FilterValue>
@@ -1765,6 +1765,48 @@
       <rd:DataSourceID>34988714-207f-4d1e-a2f3-54fcea4bac8f</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="dsBasicInfo">
+      <Query>
+        <DataSourceName>AutoManagerPlantDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ID">
+          <DataField>ID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewDate">
+          <DataField>CheckViewDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewTime">
+          <DataField>CheckViewTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewContent">
+          <DataField>CheckViewContent</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewResult">
+          <DataField>CheckViewResult</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewPersion">
+          <DataField>CheckViewPersion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>dsBasicInfo</rd:DataSetName>
+        <rd:SchemaPath>F:\VBank\Documents\GitHub\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\DataSets\dsBasicInfo.xsd</rd:SchemaPath>
+        <rd:TableName>DailyReport_CheckView</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>DailyReport_CheckViewTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>e15cdfaa-feff-491a-867e-5c1918605a69</rd:ReportID>
 </Report>
