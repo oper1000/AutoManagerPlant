@@ -59,15 +59,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="ClassBasket\ReportDataSource.cs" />
-    <Compile Include="DataSets\dsBasicInfo.cs">
-      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="DataSets\dsBasicInfo.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
-    </Compile>
     <Compile Include="FormBasket\frmBugAdd.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,17 +137,6 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
-    <None Include="DataSets\dsBasicInfo.xsc">
-      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
-    </None>
-    <None Include="DataSets\dsBasicInfo.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>dsBasicInfo.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="DataSets\dsBasicInfo.xss">
-      <DependentUpon>dsBasicInfo.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
