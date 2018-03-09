@@ -47,7 +47,16 @@ namespace EquipmentResumeMGR.FormBasket
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            
+            if (cmbEquipmentList.Text == "" ||
+                txtBugAppearance.Text == "" ||
+                txtMaintenanceProcedure.Text == "" ||
+                txtFailureCause.Text == "" ||
+                cmbFixResult.Text == "" ||
+                cmbFixPersion.Text == "" )
+            {
+                MessageBox.Show("请将维修信息填写完整，谢谢！",Application.ProductName, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             try
             {
                 clsconnection.connLocalAccess.Open();

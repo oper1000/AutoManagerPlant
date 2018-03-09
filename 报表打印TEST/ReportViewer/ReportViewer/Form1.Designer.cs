@@ -30,12 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.ProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.CustomerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ProductBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingSource)).BeginInit();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripComboBox1 = new System.Windows.Forms.ToolStripComboBox();
+            this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ProductBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingSource)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // ProductBindingSource
+            // 
+            this.ProductBindingSource.DataSource = typeof(ReportViewer.DefineProduct.Product);
             // 
             // reportViewer1
             // 
@@ -44,31 +52,53 @@
             reportDataSource1.Value = this.ProductBindingSource;
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ReportViewer.Report3.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Location = new System.Drawing.Point(0, 29);
             this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(632, 334);
+            this.reportViewer1.Size = new System.Drawing.Size(703, 443);
             this.reportViewer1.TabIndex = 0;
             // 
             // CustomerBindingSource
             // 
             this.CustomerBindingSource.DataMember = "Customer";
             // 
-            // ProductBindingSource
+            // menuStrip1
             // 
-            this.ProductBindingSource.DataSource = typeof(ReportViewer.DefineProduct.Product);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripComboBox1,
+            this.toolStripComboBox2});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(703, 29);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripComboBox1
+            // 
+            this.toolStripComboBox1.Name = "toolStripComboBox1";
+            this.toolStripComboBox1.Size = new System.Drawing.Size(121, 25);
+            // 
+            // toolStripComboBox2
+            // 
+            this.toolStripComboBox2.Name = "toolStripComboBox2";
+            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 25);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(632, 334);
+            this.ClientSize = new System.Drawing.Size(703, 472);
             this.Controls.Add(this.reportViewer1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProductBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomerBindingSource)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -77,6 +107,9 @@
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.BindingSource CustomerBindingSource;
         private System.Windows.Forms.BindingSource ProductBindingSource;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox1;
+        private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
     }
 }
 
