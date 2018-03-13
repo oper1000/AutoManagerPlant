@@ -119,10 +119,10 @@ namespace EquipmentResumeMGR.ClassBasket
         /// </summary>
         public class BasicInfo
         {
-            private DateTime m_ReportDate;
-            private string m_ReportOnWorkPeople;
-            private string m_ReportBanci;
-            private string m_ReportBanzu;
+            private DateTime m_ReportDate;    //日报日期
+            private string m_ReportOnWorkPeople;  //当班人员
+            private string m_ReportBanci;   //班次
+            private string m_ReportBanzu;   //班别
             public BasicInfo(DateTime reportDate, string reportOnWorkPeople, string reportBanci, string reportBanzu)
             {
                 m_ReportDate = reportDate;
@@ -156,12 +156,12 @@ namespace EquipmentResumeMGR.ClassBasket
             /// </summary>
         public class CheckViewInfo
         {
-            private DateTime m_checkviewdate;
-            private string m_checkviewbanci;
-            private DateTime m_checkviewtime;
-            private string m_checkviewcontent;
-            private string m_checkviewresult;
-            private string m_checkviewperson;
+            private DateTime m_checkviewdate;  //巡检日期
+            private string m_checkviewbanci;   //巡检班次
+            private DateTime m_checkviewtime;  //巡检时间
+            private string m_checkviewcontent; //巡检内容
+            private string m_checkviewresult;  //巡检结果
+            private string m_checkviewperson;  //巡检人
 
             public CheckViewInfo(DateTime checkviewdate,
                                  string checkviewbanci,
@@ -241,26 +241,113 @@ namespace EquipmentResumeMGR.ClassBasket
                 m_fixresult = fixresult;
                 m_fixperson = fixperson;
             }
-            public DateTime CheckViewDate
+            public DateTime FixStartDate
             {
-                get { return m_checkviewdate; }
+                get { return m_fixstartdate; }
             }
-            public string CheckViewBanCi
+            public string FixByBanCi
             {
-                get { return m_checkviewbanci; }
+                get { return m_fixbybanci; }
             }
-            public DateTime CheckViewTime
+            public DateTime FixStartTime
             {
-                get { return m_checkviewtime; }
+                get { return m_fixstarttime; }
             }
-            public string CheckViewContent
+            public DateTime FixEndTime
             {
-                get { return m_checkviewcontent; }
+                get { return m_fixendtime; }
             }
-            public string CheckViewPerson
+            public DateTime FixTimeTotal
             {
-                get { return m_checkviewperson; }
+                get { return m_fixtimetotal; }
             }
+            public string EquipmentNumber
+            {
+                get { return m_equipmentnumber; }
+            }
+            public string BugAppearance
+            {
+                get { return m_bugappearance; }
+            }
+            public string MaintenanceProcedure
+            {
+                get { return m_maintenanceprocedure; }
+            }
+            public string FailureCause
+            {
+                get { return m_failurecause; }
+            }
+            public string FixResult
+            {
+                get { return m_fixresult; }
+            }
+            public string FixPerson
+            {
+                get { return m_fixperson; }
+            }
+        }
+        #endregion
+
+        #region 设备履历信息
+        /// <summary>
+        /// 构建设备履历信息虚拟表
+        /// </summary>
+        public class DailyReportDetails
+        {
+            private string m_equipmentname;   //设备名称
+            private DateTime m_hisstartdate;  //履历开始日期
+            private DateTime m_hisstarttime;  //履历开始时间
+            private DateTime m_hisendtime;    //履历结束时间
+            private string m_histype;         //区分：维修或保养
+            private string m_hiscontent;      //内容
+            private string m_hisresult;       //结果
+
+
+            public DailyReportDetails(string equipmentname,
+                DateTime hisstartdate,
+                DateTime hisstarttime,
+                DateTime hisendtime,
+                string histype,
+                string hiscontent,
+                string hisresult)
+            {
+                m_equipmentname = equipmentname;
+                m_hisstartdate = hisstartdate;
+                m_hisstarttime = hisstarttime;
+                m_hisendtime = hisendtime;
+                m_histype = histype;
+                m_hiscontent = hiscontent;
+                m_hisresult = hisresult;
+            }
+            public string EquipmentName
+            {
+                get { return m_equipmentname; }
+            }
+            public DateTime HisStartDate
+            {
+                get { return m_hisstartdate; }
+            }
+            public DateTime HisStartTime
+            {
+                get { return m_hisstarttime; }
+            }
+            public DateTime HisEndTime
+            {
+                get { return HisEndTime;}
+            }
+            public string HisType
+            {
+                get { return m_histype; }
+            }
+            public string HisContent
+            {
+                get { return m_hiscontent; }
+            }
+            public string HisResult
+            {
+                get { return m_hisresult; }
+            }
+
         }
         #endregion
 
@@ -273,6 +360,7 @@ namespace EquipmentResumeMGR.ClassBasket
             private List<Product> m_products;
             public Merchant()
             {
+
                 m_products = new List<Product>();
                 m_products.Add(new Product("Pen", 25));
                 m_products.Add(new Product("Pencil", 30));
