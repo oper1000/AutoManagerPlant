@@ -48,3 +48,17 @@ F:\Vbank\Document\GitHub\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\
 F:\Vbank\Document\GitHub\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.exe
 F:\Vbank\Document\GitHub\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.pdb
 F:\Vbank\Document\GitHub\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csprojResolveAssemblyReference.cache
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csprojResolveAssemblyReference.cache
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmBugAdd.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmDatabaseSettings.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmEquipmentMGR.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmLogin.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmMain.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmMDIMain.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmDailyReportView.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.Properties.Resources.resources
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csproj.GenerateResource.Cache
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.cache
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.compiled
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.exe
+F:\VCode\C#\AutoManager\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.pdb

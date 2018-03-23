@@ -292,7 +292,7 @@ namespace EquipmentResumeMGR.ClassBasket
         /// <summary>
         /// 构建设备履历信息虚拟表
         /// </summary>
-        public class DailyReportDetails
+        public class EuipmentHistory
         {
             private string m_equipmentname;   //设备名称
             private DateTime m_hisstartdate;  //履历开始日期
@@ -303,7 +303,7 @@ namespace EquipmentResumeMGR.ClassBasket
             private string m_hisresult;       //结果
 
 
-            public DailyReportDetails(string equipmentname,
+            public EuipmentHistory(string equipmentname,
                 DateTime hisstartdate,
                 DateTime hisstarttime,
                 DateTime hisendtime,
@@ -357,16 +357,16 @@ namespace EquipmentResumeMGR.ClassBasket
         // Product objects. 
         public class Merchant
         {
-            private List<Product> m_products;
+            private List<DailyReportDetails> m_products;
             public Merchant()
             {
 
-                m_products = new List<Product>();
-                m_products.Add(new Product("Pen", 25));
-                m_products.Add(new Product("Pencil", 30));
-                m_products.Add(new Product("Notebook", 15));
+                m_products = new List<DailyReportDetails>();
+                m_products.Add(new DailyReportDetails("));
+                m_products.Add(new DailyReportDetails("Pencil", 30));
+                m_products.Add(new DailyReportDetails("Notebook", 15));
             }
-            public List<Product> GetProducts() { return m_products; }
+            public List<DailyReportDetails> GetProducts() { return m_products; }
         }
 
     }
