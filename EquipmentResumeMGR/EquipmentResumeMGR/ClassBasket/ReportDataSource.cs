@@ -357,12 +357,23 @@ namespace EquipmentResumeMGR.ClassBasket
         // Product objects. 
         public class Merchant
         {
+            //private string m_fixbybanci;   //班次
+            //private DateTime m_fixstartdate; //开始维修日期
+            //private DateTime m_fixstarttime; //维修开始时间
+            //private DateTime m_fixendtime;  //维修结束时间
+            //private DateTime m_fixtimetotal; //维修总用时
+            //private string m_equipmentnumber; //设备编号
+            //private string m_bugappearance;    //故障现象
+            //private string m_maintenanceprocedure;  //维修过程及措施
+            //private string m_failurecause;   //故障原因分析
+            //private string m_fixresult;  //维修结果
+            //private string m_fixperson;  //维修人
             private List<DailyReportDetails> m_products;
             public Merchant()
             {
 
                 m_products = new List<DailyReportDetails>();
-                m_products.Add(new DailyReportDetails("));
+                m_products.Add(new DailyReportDetails());
                 m_products.Add(new DailyReportDetails("Pencil", 30));
                 m_products.Add(new DailyReportDetails("Notebook", 15));
             }

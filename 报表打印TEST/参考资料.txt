@@ -1,2 +1,0 @@
-http://blog.sina.com.cn/s/blog_5b8e07050100fg07.html    //Winfrom 报表打印相关信息
-http://www.cnblogs.com/snowleopard/articles/1299912.html //Web应用程序
