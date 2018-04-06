@@ -105,14 +105,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox5">
+                    <Textbox Name="ReportOnWorkPeople">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!ReportOnWorkPeople.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -121,7 +121,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox5</rd:DefaultName>
+                      <rd:DefaultName>ReportOnWorkPeople</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -171,14 +171,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox8">
+                    <Textbox Name="ReportDate">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!ReportDate.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -187,7 +187,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox8</rd:DefaultName>
+                      <rd:DefaultName>ReportDate</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -237,14 +237,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox10">
+                    <Textbox Name="ReportBanCi">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!ReportBanCi.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -253,7 +253,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox10</rd:DefaultName>
+                      <rd:DefaultName>ReportBanCi</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -303,14 +303,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox12">
+                    <Textbox Name="ReportBanzu">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!ReportBanzu.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -319,7 +319,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox12</rd:DefaultName>
+                      <rd:DefaultName>ReportBanzu</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -408,22 +408,6 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>dsBasicInfo</DataSetName>
-        <Filters>
-          <Filter>
-            <FilterExpression>=Fields!CheckViewDate.Value</FilterExpression>
-            <Operator>Equal</Operator>
-            <FilterValues>
-              <FilterValue DataType="DateTime">02/02/2018 00:00:00</FilterValue>
-            </FilterValues>
-          </Filter>
-          <Filter>
-            <FilterExpression>=Fields!CheckViewPersion.Value</FilterExpression>
-            <Operator>Equal</Operator>
-            <FilterValues>
-              <FilterValue>dd</FilterValue>
-            </FilterValues>
-          </Filter>
-        </Filters>
         <Top>2.64266cm</Top>
         <Left>0.38009cm</Left>
         <Height>1.61864cm</Height>
@@ -641,14 +625,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox38">
+                    <Textbox Name="CheckViewID">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!CheckViewID.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -659,7 +643,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox38</rd:DefaultName>
+                      <rd:DefaultName>CheckViewID</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -676,14 +660,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox40">
+                    <Textbox Name="CheckViewTime">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!CheckViewTime.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -694,7 +678,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox40</rd:DefaultName>
+                      <rd:DefaultName>CheckViewTime</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -711,14 +695,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox42">
+                    <Textbox Name="CheckViewContent">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!CheckViewContent.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -729,7 +713,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox42</rd:DefaultName>
+                      <rd:DefaultName>CheckViewContent</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -746,14 +730,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox44">
+                    <Textbox Name="CheckViewResult">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!CheckViewResult.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -764,7 +748,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox44</rd:DefaultName>
+                      <rd:DefaultName>CheckViewResult</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -781,14 +765,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox46">
+                    <Textbox Name="CheckViewPerson">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!CheckViewPerson.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -799,7 +783,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox46</rd:DefaultName>
+                      <rd:DefaultName>CheckViewPerson</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -837,6 +821,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <DataSetName>dsCheckInfo</DataSetName>
         <Top>4.2613cm</Top>
         <Left>0.38009cm</Left>
         <Height>1.54396cm</Height>
@@ -1206,14 +1191,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox48">
+                    <Textbox Name="FixID">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!FixID.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1224,7 +1209,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox48</rd:DefaultName>
+                      <rd:DefaultName>FixID</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1241,14 +1226,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox50">
+                    <Textbox Name="FixStartTime">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!FixStartTime.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1259,7 +1244,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox50</rd:DefaultName>
+                      <rd:DefaultName>FixStartTime</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1276,14 +1261,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox52">
+                    <Textbox Name="FixEndTime">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!FixEndTime.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1294,7 +1279,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox52</rd:DefaultName>
+                      <rd:DefaultName>FixEndTime</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1311,14 +1296,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox62">
+                    <Textbox Name="EquipmentName">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!EquipmentName.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1329,7 +1314,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox62</rd:DefaultName>
+                      <rd:DefaultName>EquipmentName</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1346,14 +1331,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox74">
+                    <Textbox Name="BugAppearance">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!BugAppearance.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1364,7 +1349,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox74</rd:DefaultName>
+                      <rd:DefaultName>BugAppearance</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1381,14 +1366,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox72">
+                    <Textbox Name="MaintenanceProcedure">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!MaintenanceProcedure.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1399,7 +1384,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox72</rd:DefaultName>
+                      <rd:DefaultName>MaintenanceProcedure</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1416,14 +1401,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox70">
+                    <Textbox Name="FixResult">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!FixResult.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1434,7 +1419,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox70</rd:DefaultName>
+                      <rd:DefaultName>FixResult</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1451,14 +1436,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox68">
+                    <Textbox Name="FailureCause">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!FailureCause.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1469,7 +1454,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox68</rd:DefaultName>
+                      <rd:DefaultName>FailureCause</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1486,14 +1471,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox66">
+                    <Textbox Name="FixPerson">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!FixPerson.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1504,7 +1489,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox66</rd:DefaultName>
+                      <rd:DefaultName>FixPerson</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1546,6 +1531,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <DataSetName>dsDailyReportDetails</DataSetName>
         <Top>6.77744cm</Top>
         <Left>0.38009cm</Left>
         <Height>1.46458cm</Height>
@@ -1617,6 +1603,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <DataSetName>dsEquipmentHistory</DataSetName>
         <Top>5.98165cm</Top>
         <Left>0.38009cm</Left>
         <Height>0.6194cm</Height>
@@ -1679,14 +1666,14 @@
               <TablixCells>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox76">
+                    <Textbox Name="ReportOther">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value />
+                              <Value>=Fields!ReportOther.Value</Value>
                               <Style>
                                 <FontFamily>宋体</FontFamily>
                               </Style>
@@ -1695,7 +1682,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox76</rd:DefaultName>
+                      <rd:DefaultName>ReportOther</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -1708,6 +1695,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -1729,6 +1717,7 @@
             </TablixMember>
           </TablixMembers>
         </TablixRowHierarchy>
+        <DataSetName>dsBasicInfo</DataSetName>
         <Top>8.24908cm</Top>
         <Left>0.38009cm</Left>
         <Height>3.36958cm</Height>
@@ -1757,14 +1746,217 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="AutoManagerPlantDataSet">
+    <DataSource Name="EquipmentResumeMGRClassBasket">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>34988714-207f-4d1e-a2f3-54fcea4bac8f</rd:DataSourceID>
+      <rd:DataSourceID>24768679-4188-41b9-bae3-319315513530</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="EquipmentResumeMGRClassBasket1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>71ca04c3-8efe-4a97-8d6f-4b1e61776f50</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="EquipmentResumeMGRClassBasket2">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>764c721d-269f-4bd4-97e4-b12ef27b0fa8</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="EquipmentResumeMGRClassBasket3">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>0a8b9f77-37c3-47f3-8d14-0f5810917218</rd:DataSourceID>
     </DataSource>
   </DataSources>
+  <DataSets>
+    <DataSet Name="dsBasicInfo">
+      <Query>
+        <DataSourceName>EquipmentResumeMGRClassBasket</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="ReportBanCi">
+          <DataField>ReportBanCi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportBanzu">
+          <DataField>ReportBanzu</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportDate">
+          <DataField>ReportDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ReportOnWorkPeople">
+          <DataField>ReportOnWorkPeople</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportOther">
+          <DataField>ReportOther</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>EquipmentResumeMGR.ClassBasket</rd:DataSetName>
+        <rd:TableName>BasicInfo</rd:TableName>
+        <rd:ObjectDataSourceType>EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+BasicInfo, EquipmentResumeMGR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsCheckInfo">
+      <Query>
+        <DataSourceName>EquipmentResumeMGRClassBasket1</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CheckViewBanCi">
+          <DataField>CheckViewBanCi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewContent">
+          <DataField>CheckViewContent</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewDate">
+          <DataField>CheckViewDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewID">
+          <DataField>CheckViewID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewPerson">
+          <DataField>CheckViewPerson</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewResult">
+          <DataField>CheckViewResult</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CheckViewTime">
+          <DataField>CheckViewTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>EquipmentResumeMGR.ClassBasket</rd:DataSetName>
+        <rd:TableName>CheckViewInfo</rd:TableName>
+        <rd:ObjectDataSourceType>EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+CheckViewInfo, EquipmentResumeMGR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsDailyReportDetails">
+      <Query>
+        <DataSourceName>EquipmentResumeMGRClassBasket2</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BugAppearance">
+          <DataField>BugAppearance</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EquipmentName">
+          <DataField>EquipmentName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EquipmentNumber">
+          <DataField>EquipmentNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FailureCause">
+          <DataField>FailureCause</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FixByBanCi">
+          <DataField>FixByBanCi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FixEndTime">
+          <DataField>FixEndTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FixID">
+          <DataField>FixID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FixPerson">
+          <DataField>FixPerson</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FixResult">
+          <DataField>FixResult</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FixStartDate">
+          <DataField>FixStartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FixStartTime">
+          <DataField>FixStartTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FixTimeTotal">
+          <DataField>FixTimeTotal</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="MaintenanceProcedure">
+          <DataField>MaintenanceProcedure</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>EquipmentResumeMGR.ClassBasket</rd:DataSetName>
+        <rd:TableName>DailyReportDetails</rd:TableName>
+        <rd:ObjectDataSourceType>EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+DailyReportDetails, EquipmentResumeMGR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsEquipmentHistory">
+      <Query>
+        <DataSourceName>EquipmentResumeMGRClassBasket3</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="EquipmentName">
+          <DataField>EquipmentName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HisContent">
+          <DataField>HisContent</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HisEndTime">
+          <DataField>HisEndTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HisResult">
+          <DataField>HisResult</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HisStartDate">
+          <DataField>HisStartDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HisStartTime">
+          <DataField>HisStartTime</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HisType">
+          <DataField>HisType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>EquipmentResumeMGR.ClassBasket</rd:DataSetName>
+        <rd:TableName>EuipmentHistory</rd:TableName>
+        <rd:ObjectDataSourceType>EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+EuipmentHistory, EquipmentResumeMGR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>e15cdfaa-feff-491a-867e-5c1918605a69</rd:ReportID>
 </Report>

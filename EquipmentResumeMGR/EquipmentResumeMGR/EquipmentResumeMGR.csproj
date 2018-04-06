@@ -137,6 +137,11 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
+    <None Include="Properties\DataSources\EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+BasicInfo.datasource" />
+    <None Include="Properties\DataSources\EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+CheckViewInfo.datasource" />
+    <None Include="Properties\DataSources\EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+DailyReportDetails.datasource" />
+    <None Include="Properties\DataSources\EquipmentResumeMGR.ClassBasket.Dty_Daily_Report+EuipmentHistory.datasource" />
+    <None Include="Properties\DataSources\EquipmentResumeMGR.ClassBasket.Dty_Daily_Report.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

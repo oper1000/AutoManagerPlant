@@ -29,28 +29,46 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.autoManagerPlantDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource4 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.LblTime = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.autoManagerPlantDataSetBindingSource)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LblTime = new System.Windows.Forms.Label();
+            this.basicInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.checkViewInfoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dailyReportDetailsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.euipmentHistoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.basicInfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkViewInfoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dailyReportDetailsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.euipmentHistoryBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource2.Name = "dsBasicInfo";
-            reportDataSource2.Value = this.autoManagerPlantDataSetBindingSource;
+            reportDataSource1.Name = "dsBasicInfo";
+            reportDataSource1.Value = this.basicInfoBindingSource;
+            reportDataSource2.Name = "dsCheckInfo";
+            reportDataSource2.Value = this.checkViewInfoBindingSource;
+            reportDataSource3.Name = "dsDailyReportDetails";
+            reportDataSource3.Value = this.dailyReportDetailsBindingSource;
+            reportDataSource4.Name = "dsEquipmentHistory";
+            reportDataSource4.Value = this.euipmentHistoryBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource4);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "EquipmentResumeMGR.FormBasket.dailyReport.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
@@ -98,23 +116,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "条件";
             // 
-            // LblTime
+            // button1
             // 
-            this.LblTime.AutoSize = true;
-            this.LblTime.Location = new System.Drawing.Point(13, 23);
-            this.LblTime.Name = "LblTime";
-            this.LblTime.Size = new System.Drawing.Size(41, 12);
-            this.LblTime.TabIndex = 0;
-            this.LblTime.Text = "日期：";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(191, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 12);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "班次：";
+            this.button1.Location = new System.Drawing.Point(343, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "确定";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // comboBox1
             // 
@@ -129,14 +138,39 @@
             this.comboBox1.Size = new System.Drawing.Size(93, 20);
             this.comboBox1.TabIndex = 5;
             // 
-            // button1
+            // label1
             // 
-            this.button1.Location = new System.Drawing.Point(343, 14);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 30);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "确定";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(191, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(41, 12);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "班次：";
+            // 
+            // LblTime
+            // 
+            this.LblTime.AutoSize = true;
+            this.LblTime.Location = new System.Drawing.Point(13, 23);
+            this.LblTime.Name = "LblTime";
+            this.LblTime.Size = new System.Drawing.Size(41, 12);
+            this.LblTime.TabIndex = 0;
+            this.LblTime.Text = "日期：";
+            // 
+            // basicInfoBindingSource
+            // 
+            this.basicInfoBindingSource.DataSource = typeof(EquipmentResumeMGR.ClassBasket.Dty_Daily_Report.BasicInfo);
+            // 
+            // checkViewInfoBindingSource
+            // 
+            this.checkViewInfoBindingSource.DataSource = typeof(EquipmentResumeMGR.ClassBasket.Dty_Daily_Report.CheckViewInfo);
+            // 
+            // dailyReportDetailsBindingSource
+            // 
+            this.dailyReportDetailsBindingSource.DataSource = typeof(EquipmentResumeMGR.ClassBasket.Dty_Daily_Report.DailyReportDetails);
+            // 
+            // euipmentHistoryBindingSource
+            // 
+            this.euipmentHistoryBindingSource.DataSource = typeof(EquipmentResumeMGR.ClassBasket.Dty_Daily_Report.EuipmentHistory);
             // 
             // frmDailyReportView
             // 
@@ -149,10 +183,13 @@
             this.Name = "frmDailyReportView";
             this.Text = "日报预览";
             this.Load += new System.EventHandler(this.frmReportView_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.autoManagerPlantDataSetBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.basicInfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkViewInfoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dailyReportDetailsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.euipmentHistoryBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -160,7 +197,6 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource autoManagerPlantDataSetBindingSource;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -169,5 +205,9 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LblTime;
+        private System.Windows.Forms.BindingSource basicInfoBindingSource;
+        private System.Windows.Forms.BindingSource checkViewInfoBindingSource;
+        private System.Windows.Forms.BindingSource dailyReportDetailsBindingSource;
+        private System.Windows.Forms.BindingSource euipmentHistoryBindingSource;
     }
 }

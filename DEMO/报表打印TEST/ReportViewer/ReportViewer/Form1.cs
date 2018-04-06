@@ -15,7 +15,7 @@ namespace ReportViewer
     {
         // Instantiate the Merchant class.
 
-        private DefineProduct.Merchant1111 m_merchant = new DefineProduct.Merchant1111();
+        private DefineProduct.Merchant m_merchant = new DefineProduct.Merchant();
         public Form1()
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace ReportViewer
             //this.productBindingSource.DataSource = m_merchant.GetProducts();
             //this.customerBindingSource.DataSource = Customer.GetAllCustomers();
 
-            //this.ProductBindingSource.DataSource = m_merchant.GetProducts();
+            this.ProductBindingSource.DataSource = m_merchant.GetProducts();
             
             this.reportViewer1.RefreshReport();
         }

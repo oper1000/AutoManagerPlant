@@ -33,3 +33,14 @@ F:\VBank\Documents\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportV
 F:\Vbank\Document\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\bin\Debug\ReportViewer.exe.config
 F:\Vbank\Document\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.exe
 F:\Vbank\Document\GitHub\AutoManagerPlant\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.pdb
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\bin\Debug\ReportViewer.exe.config
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.exe
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.pdb
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\bin\Debug\ReportViewer.exe
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\bin\Debug\ReportViewer.pdb
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.csprojResolveAssemblyReference.cache
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.Form1.resources
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.Properties.Resources.resources
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\ReportViewer.csproj.GenerateResource.Cache
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\RdlCompile.cache
+F:\VCode\C#\AutoManagerPlant\DEMO\报表打印TEST\ReportViewer\ReportViewer\obj\Debug\RdlCompile.compiled

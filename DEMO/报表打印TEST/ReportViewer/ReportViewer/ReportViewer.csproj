@@ -90,6 +90,8 @@
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Report3.rdlc" />
+    <None Include="Properties\DataSources\DefineProduct.datasource" />
+    <None Include="Properties\DataSources\DefineProduct.Merchant.datasource" />
     <None Include="Properties\DataSources\DefineProduct.Product.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

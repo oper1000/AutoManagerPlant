@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace EquipmentResumeMGR.ClassBasket
 {
@@ -123,12 +124,18 @@ namespace EquipmentResumeMGR.ClassBasket
             private string m_ReportOnWorkPeople;  //当班人员
             private string m_ReportBanci;   //班次
             private string m_ReportBanzu;   //班别
-            public BasicInfo(DateTime reportDate, string reportOnWorkPeople, string reportBanci, string reportBanzu)
+            private string m_ReportOther;
+            public BasicInfo(DateTime reportDate, 
+                string reportOnWorkPeople, 
+                string reportBanci, 
+                string reportBanzu,
+                string reportOther)
             {
                 m_ReportDate = reportDate;
                 m_ReportOnWorkPeople = reportOnWorkPeople;
                 m_ReportBanci = reportBanci;
                 m_ReportBanzu = reportBanzu;
+                m_ReportOther = reportOther;
             }
             public DateTime  ReportDate
             {
@@ -146,7 +153,10 @@ namespace EquipmentResumeMGR.ClassBasket
             {
                 get { return m_ReportBanzu; }
             }
-            
+            public string ReportOther
+            {
+                get { return m_ReportOther; }
+            }
         }
         #endregion
 
@@ -156,6 +166,7 @@ namespace EquipmentResumeMGR.ClassBasket
             /// </summary>
         public class CheckViewInfo
         {
+            private string m_checkviewid;      //序号
             private DateTime m_checkviewdate;  //巡检日期
             private string m_checkviewbanci;   //巡检班次
             private DateTime m_checkviewtime;  //巡检时间
@@ -163,18 +174,25 @@ namespace EquipmentResumeMGR.ClassBasket
             private string m_checkviewresult;  //巡检结果
             private string m_checkviewperson;  //巡检人
 
-            public CheckViewInfo(DateTime checkviewdate,
+            public CheckViewInfo(string checkviewid,
+                                 DateTime checkviewdate,
                                  string checkviewbanci,
                                  DateTime checkviewtime,
                                  string checkviewcontent,
                                  string checkviewresult,
                                  string checkviewperson)
             {
+                m_checkviewid = checkviewid;
                 m_checkviewdate = checkviewdate;
                 m_checkviewbanci = checkviewbanci;
                 m_checkviewtime = checkviewtime;
                 m_checkviewcontent = checkviewcontent;
+                m_checkviewresult = checkviewresult;
                 m_checkviewperson = checkviewperson;
+            }
+            public string CheckViewID
+            {
+                get { return m_checkviewid; }
             }
             public DateTime  CheckViewDate
             {
@@ -192,6 +210,10 @@ namespace EquipmentResumeMGR.ClassBasket
             {
                 get { return m_checkviewcontent; }
             }
+            public string CheckViewResult
+            {
+                get { return m_checkviewresult; }
+            }
             public string CheckViewPerson
             {
                 get { return m_checkviewperson; }
@@ -205,41 +227,51 @@ namespace EquipmentResumeMGR.ClassBasket
         /// </summary>
         public class DailyReportDetails
         {
+            private string m_fixid;        //序号
             private string m_fixbybanci;   //班次
             private DateTime m_fixstartdate; //开始维修日期
             private DateTime m_fixstarttime; //维修开始时间
             private DateTime  m_fixendtime;  //维修结束时间
             private DateTime m_fixtimetotal; //维修总用时
             private string m_equipmentnumber; //设备编号
+            private string m_equipmentname;   //设备名称
             private string m_bugappearance;    //故障现象
             private string m_maintenanceprocedure;  //维修过程及措施
             private string m_failurecause;   //故障原因分析
             private string m_fixresult;  //维修结果
             private string m_fixperson;  //维修人
 
-            public DailyReportDetails(string fixbybanci,
+            public DailyReportDetails(string fixid,
+                string fixbybanci,
                 DateTime fixstartdate,
                 DateTime fixstarttime,
                 DateTime fixendtime,
                 DateTime fixtimetotal,
                 string equipmentnumber,
+                string equipmentname,
                 string bugappearance,
                 string maintenanceprocedure,
                 string failurecause,
                 string fixresult,
                 string fixperson)
             {
+                m_fixid = fixid;
                 m_fixbybanci = fixbybanci;
                 m_fixstartdate = fixstartdate;
                 m_fixstarttime = fixstarttime;
                 m_fixendtime = fixendtime;
                 m_fixtimetotal = fixtimetotal;
                 m_equipmentnumber = equipmentnumber;
+                m_equipmentname = equipmentname;
                 m_bugappearance = bugappearance;
                 m_maintenanceprocedure = maintenanceprocedure;
                 m_failurecause = failurecause;
                 m_fixresult = fixresult;
                 m_fixperson = fixperson;
+            }
+            public string FixID
+            {
+                get { return m_fixid; }
             }
             public DateTime FixStartDate
             {
@@ -264,6 +296,10 @@ namespace EquipmentResumeMGR.ClassBasket
             public string EquipmentNumber
             {
                 get { return m_equipmentnumber; }
+            }
+            public string EquipmentName
+            {
+                get { return m_equipmentname; }
             }
             public string BugAppearance
             {
@@ -355,7 +391,7 @@ namespace EquipmentResumeMGR.ClassBasket
         // Define Business Object "Merchant" that provides a 
         // GetProducts method that returns a collection of 
         // Product objects. 
-        public class Merchant
+        public class Merchant_BugDetails
         {
             //private string m_fixbybanci;   //班次
             //private DateTime m_fixstartdate; //开始维修日期
@@ -369,15 +405,40 @@ namespace EquipmentResumeMGR.ClassBasket
             //private string m_fixresult;  //维修结果
             //private string m_fixperson;  //维修人
             private List<DailyReportDetails> m_products;
-            public Merchant()
+            public Merchant_BugDetails()
             {
-
+                DateTimeFormatInfo dtFormatTime = new DateTimeFormatInfo();
+                DateTimeFormatInfo dtFormatDate = new DateTimeFormatInfo();
+                dtFormatDate.ShortDatePattern="yyyy-MM-DD";
+                //dtFormatTime.ShortTimePattern;
                 m_products = new List<DailyReportDetails>();
-                m_products.Add(new DailyReportDetails());
-                m_products.Add(new DailyReportDetails("Pencil", 30));
-                m_products.Add(new DailyReportDetails("Notebook", 15));
+                m_products.Add(new DailyReportDetails(
+                    "1",
+                    "班次",
+                   Convert.ToDateTime( Convert.ToDateTime("2016-9-8").ToShortTimeString()),
+                    Convert.ToDateTime("9:08:00",dtFormatTime),
+                    Convert.ToDateTime("9:58:00",dtFormatTime),
+                    Convert.ToDateTime("00:50:00",dtFormatTime),
+                    "FB101",
+                    "裹膜机",
+                    "断膜频繁",
+                    "重新封膜",
+                    "膜质量差",
+                    "正常",
+                    "曲继辉"
+                ));
             }
             public List<DailyReportDetails> GetProducts() { return m_products; }
+        }
+
+        public class Merchant_BasicInfo
+        {
+ 
+        }
+
+        public class Merchant_CheckView
+        {
+ 
         }
 
     }
