@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Data.OleDb;
+using System.Data.Odbc;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -112,8 +114,12 @@ namespace EquipmentResumeMGR.ClassBasket
     }
      */
 
+    
+
     public class Dty_Daily_Report
     {
+        private clsConnection clsconnection = new clsConnection();
+
         #region 日报基本信息表
         /// <summary>
         /// 构建日报表基本信息虚拟表
@@ -124,7 +130,7 @@ namespace EquipmentResumeMGR.ClassBasket
             private string m_ReportOnWorkPeople;  //当班人员
             private string m_ReportBanci;   //班次
             private string m_ReportBanzu;   //班别
-            private string m_ReportOther;
+            private string m_ReportOther;   //其他信息
             public BasicInfo(DateTime reportDate, 
                 string reportOnWorkPeople, 
                 string reportBanci, 
@@ -229,10 +235,10 @@ namespace EquipmentResumeMGR.ClassBasket
         {
             private string m_fixid;        //序号
             private string m_fixbybanci;   //班次
-            private DateTime m_fixstartdate; //开始维修日期
-            private DateTime m_fixstarttime; //维修开始时间
-            private DateTime  m_fixendtime;  //维修结束时间
-            private DateTime m_fixtimetotal; //维修总用时
+            private string m_fixstartdate; //开始维修日期
+            private string m_fixstarttime; //维修开始时间
+            private string m_fixendtime;  //维修结束时间
+            private string m_fixtimetotal; //维修总用时
             private string m_equipmentnumber; //设备编号
             private string m_equipmentname;   //设备名称
             private string m_bugappearance;    //故障现象
@@ -243,10 +249,10 @@ namespace EquipmentResumeMGR.ClassBasket
 
             public DailyReportDetails(string fixid,
                 string fixbybanci,
-                DateTime fixstartdate,
-                DateTime fixstarttime,
-                DateTime fixendtime,
-                DateTime fixtimetotal,
+                string fixstartdate,
+                string fixstarttime,
+                string fixendtime,
+                string fixtimetotal,
                 string equipmentnumber,
                 string equipmentname,
                 string bugappearance,
@@ -273,7 +279,7 @@ namespace EquipmentResumeMGR.ClassBasket
             {
                 get { return m_fixid; }
             }
-            public DateTime FixStartDate
+            public string FixStartDate
             {
                 get { return m_fixstartdate; }
             }
@@ -281,15 +287,15 @@ namespace EquipmentResumeMGR.ClassBasket
             {
                 get { return m_fixbybanci; }
             }
-            public DateTime FixStartTime
+            public string FixStartTime
             {
                 get { return m_fixstarttime; }
             }
-            public DateTime FixEndTime
+            public string FixEndTime
             {
                 get { return m_fixendtime; }
             }
-            public DateTime FixTimeTotal
+            public string FixTimeTotal
             {
                 get { return m_fixtimetotal; }
             }
@@ -387,10 +393,11 @@ namespace EquipmentResumeMGR.ClassBasket
         }
         #endregion
 
-
+        #region 读取故障详情信息到报表DataSource
         // Define Business Object "Merchant" that provides a 
         // GetProducts method that returns a collection of 
         // Product objects. 
+        
         public class Merchant_BugDetails
         {
             //private string m_fixbybanci;   //班次
@@ -404,42 +411,125 @@ namespace EquipmentResumeMGR.ClassBasket
             //private string m_failurecause;   //故障原因分析
             //private string m_fixresult;  //维修结果
             //private string m_fixperson;  //维修人
-            private List<DailyReportDetails> m_products;
+
+            
+            
+
+            private List<DailyReportDetails> m_BugDetails;
             public Merchant_BugDetails()
             {
                 DateTimeFormatInfo dtFormatTime = new DateTimeFormatInfo();
                 DateTimeFormatInfo dtFormatDate = new DateTimeFormatInfo();
-                dtFormatDate.ShortDatePattern="yyyy-MM-DD";
+
+                DateTime dtFixStartDate, dtFixStartTime, dtFixEndTime, dtFixTimeTotal;
+
                 //dtFormatTime.ShortTimePattern;
-                m_products = new List<DailyReportDetails>();
-                m_products.Add(new DailyReportDetails(
-                    "1",
-                    "班次",
-                   Convert.ToDateTime( Convert.ToDateTime("2016-9-8").ToShortTimeString()),
-                    Convert.ToDateTime("9:08:00",dtFormatTime),
-                    Convert.ToDateTime("9:58:00",dtFormatTime),
-                    Convert.ToDateTime("00:50:00",dtFormatTime),
-                    "FB101",
-                    "裹膜机",
-                    "断膜频繁",
-                    "重新封膜",
-                    "膜质量差",
-                    "正常",
-                    "曲继辉"
-                ));
+                m_BugDetails = new List<DailyReportDetails>();
+                for (int i = 0; i < clsComm.dsDailyReport.Tables[0].Rows.Count; i++)
+                {
+                    dtFixStartDate=Convert.ToDateTime(clsComm.dsDailyReport.Tables[0].Rows[i]["FixStartDate"], dtFormatDate);
+                    //dtFixStartTime=Convert.ToDateTime(clsComm.dsDailyReport.Tables[0].Rows[i]["FixStartTime"], dtFormatTime);
+                    //dtFixEndTime=Convert.ToDateTime(clsComm.dsDailyReport.Tables[0].Rows[i]["FixEndTime"], dtFormatTime);
+                    //dtFixTimeTotal=Convert.ToDateTime(clsComm.dsDailyReport.Tables[0].Rows[i]["FixTimeTotal"], dtFormatTime);
+                    m_BugDetails.Add(new DailyReportDetails(
+                        (i + 1).ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FixByBanCi"].ToString(),
+                         dtFixStartDate.ToString("yyyy-MM-dd"),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FixStartTime"].ToString(),//dtFixStartTime.ToString("hh:mm:ss"),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FixEndTime"].ToString(),//dtFixEndTime.ToString("hh:mm:ss"),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FixTimeTotal"].ToString(),//dtFixTimeTotal.ToString("hh:mm:ss"),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["EquipmentNumber"].ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["EquipmentName"].ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["BugAppearance"].ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["MaintenanceProcedure"].ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FailureCause"].ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FixResult"].ToString(),
+                         clsComm.dsDailyReport.Tables[0].Rows[i]["FixPerson"].ToString()
+                    ));
+                }
             }
-            public List<DailyReportDetails> GetProducts() { return m_products; }
+            public List<DailyReportDetails> GetBugDetails() { return m_BugDetails; }
         }
+        #endregion
 
-        public class Merchant_BasicInfo
-        {
- 
-        }
+        //#region 读取基本信息到报表DataSource
+        //public class Merchant_BasicInfo
+        //{
+        //    //private DateTime m_ReportDate;    //日报日期
+        //    //private string m_ReportOnWorkPeople;  //当班人员
+        //    //private string m_ReportBanci;   //班次
+        //    //private string m_ReportBanzu;   //班别
+        //    //private string m_ReportOther;   //其他信息
 
-        public class Merchant_CheckView
-        {
- 
-        }
+        //    private List<BasicInfo> m_BasicInfo;
+        //    public Merchant_BasicInfo()
+        //    {
+        //        DateTimeFormatInfo dtFormatTime = new DateTimeFormatInfo();
+        //        DateTimeFormatInfo dtFormatDate = new DateTimeFormatInfo();
+        //        dtFormatDate.ShortDatePattern = "yyyy-MM-DD";
+        //        //dtFormatTime.ShortTimePattern;
+        //        m_BasicInfo = new List<BasicInfo>();
+        //        m_BasicInfo.Add(new BasicInfo(
+        //            "1",
+        //            "班次",
+        //           Convert.ToDateTime(Convert.ToDateTime("2016-9-8").ToShortTimeString()),
+        //            Convert.ToDateTime("9:08:00", dtFormatTime),
+        //            Convert.ToDateTime("9:58:00", dtFormatTime),
+        //            Convert.ToDateTime("00:50:00", dtFormatTime),
+        //            "FB101",
+        //            "裹膜机",
+        //            "断膜频繁",
+        //            "重新封膜",
+        //            "膜质量差",
+        //            "正常",
+        //            "曲继辉"
+        //        ));
+        //    }
+        //    public List<BasicInfo> GetBasicInfo() { return m_BasicInfo; }
+            
+        //}
+        //#endregion
+
+        //#region 读取巡检信息到报表DataSource
+        //public class Merchant_CheckViewInfo
+        //{
+        //    //private string m_checkviewid;      //序号
+        //    //private DateTime m_checkviewdate;  //巡检日期
+        //    //private string m_checkviewbanci;   //巡检班次
+        //    //private DateTime m_checkviewtime;  //巡检时间
+        //    //private string m_checkviewcontent; //巡检内容
+        //    //private string m_checkviewresult;  //巡检结果
+        //    //private string m_checkviewperson;  //巡检人
+
+        //    private List<CheckViewInfo> m_CheckViewInfo;
+        //    public Merchant_CheckViewInfo()
+        //    {
+        //        DateTimeFormatInfo dtFormatTime = new DateTimeFormatInfo();
+        //        DateTimeFormatInfo dtFormatDate = new DateTimeFormatInfo();
+        //        dtFormatDate.ShortDatePattern = "yyyy-MM-DD";
+        //        //dtFormatTime.ShortTimePattern;
+        //        m_CheckViewInfo = new List<CheckViewInfo>();
+        //        m_CheckViewInfo.Add(new CheckViewInfo(
+        //            "1",
+        //            "班次",
+        //           Convert.ToDateTime(Convert.ToDateTime("2016-9-8").ToShortTimeString()),
+        //            Convert.ToDateTime("9:08:00", dtFormatTime),
+        //            Convert.ToDateTime("9:58:00", dtFormatTime),
+        //            Convert.ToDateTime("00:50:00", dtFormatTime),
+        //            "FB101",
+        //            "裹膜机",
+        //            "断膜频繁",
+        //            "重新封膜",
+        //            "膜质量差",
+        //            "正常",
+        //            "曲继辉"
+        //        ));
+        //    }
+        //    public List<CheckViewInfo> GetCheckViewInfo() { return m_CheckViewInfo; }
+           
+        //}
+        //#endregion
+
 
     }
 

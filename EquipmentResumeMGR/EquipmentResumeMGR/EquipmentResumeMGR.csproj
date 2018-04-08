@@ -39,6 +39,7 @@
     <StartupObject>EquipmentResumeMGR.FormBasket.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="C1.C1Excel.4, Version=4.0.20171.248, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -126,6 +127,7 @@
       <DependentUpon>frmDailyReportView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBasket\dailyReport.rdlc" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

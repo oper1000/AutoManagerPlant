@@ -71,11 +71,12 @@ F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\Equ
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.FormBasket.frmDailyReportView.resources
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.Properties.Resources.resources
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csproj.GenerateResource.Cache
-F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.cache
-F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.compiled
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.exe
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.exe.config
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.exe
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\bin\Debug\EquipmentResumeMGR.pdb
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.pdb
 F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.csprojResolveAssemblyReference.cache
+F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.cache
+F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\RdlCompile.compiled
+F:\VCode\C#\AutoManagerPlant\EquipmentResumeMGR\EquipmentResumeMGR\obj\Debug\EquipmentResumeMGR.exe.licenses
